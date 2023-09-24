@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="173dp"
+        android:layout_height="191dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/round_corner"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_action_user_dark"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:layout_below="@id/editText"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/round_corner"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_action_password_dark"
+        android:inputType="textPassword"
+        android:textSize="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="130dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:textSize="18dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textMoveToSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="Sign Up Here"
+        android:textColor="#ffffff"
+        android:onClick="moveToSignUp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="48dp"
+        android:text="Trương Thúy Hằng\nMSV: 21115053120312"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
